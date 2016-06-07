@@ -1,0 +1,2449 @@
+---------------------------------------------------------------
+ Selected scenarios: 
+ -------------------------------------------------------
+ScenarioNo: 0 iteration: 2 Task to train: calm_person in the Park at level: 2
+Planning: 
+extinguish_fire using tough_coat(16) for extinguisher, 
+talk_to_person using bystander(15) for panic, 
+
+ Story: 
+small_fire(14) performs ignite to obtain danger using bbq(13) for ignition, clothing(12) for fuel, 
+bystander(15) performs panic to obtain panic using small_fire(14) for danger, 
+
+ Init Objects: 
+clothing(12)
+bbq(13)
+tough_coat(16)
+
+ Dynamic Objects: 
+small_fire(14)
+bystander(15)
+
+ Services: 
+bbq offers ignition at level: 1
+clothing offers fuel at level: 1
+tough_coat offers extinguisher at level: 2
+bystander offers panic at level: 2
+small_fire offers danger at level: 2
+
+ -------------------------------------------------- 
+ScenarioNo: 1 iteration: 3 Task to train: calm_person in the Home at level: 2
+Planning: 
+extinguish_fire using tough_coat(52) for extinguisher, 
+talk_to_person using victim(51) for panic, 
+cool_burn using victim(51) for burn, tap(53) for water, 
+remove_clothing using victim(51) for clothing_near_wound, 
+bandage_wound using victim(51) for injury, towel(48) for bandage, 
+
+ Story: 
+small_fire(50) performs ignite to obtain heat using pan(49) for ignition, towel(48) for fuel, 
+victim(51) performs get_heat_burn to obtain thermal_burn using small_fire(50) for heat, 
+victim(51) performs panic to obtain panic using victim(51) for danger, 
+
+ Init Objects: 
+towel(48)
+pan(49)
+tough_coat(52)
+tap(53)
+
+ Dynamic Objects: 
+small_fire(50)
+victim(51)
+
+ Services: 
+pan offers ignition at level: 2
+tap offers water at level: 1
+towel offers fuel at level: 1
+towel offers bandage at level: 2
+tough_coat offers extinguisher at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+small_fire offers heat at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+ScenarioNo: 2 iteration: 1 Task to train: calm_person in the Restaurant at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(69) for communication, 
+talk_to_person using victim(68) for panic, 
+cool_burn using victim(68) for burn, tap(70) for water, 
+bandage_wound using victim(68) for injury, first_aid_kit(71) for bandage, 
+
+ Story: 
+large_fire(67) performs spread to obtain heat using decorations(65) for sustaining_fuel, 
+large_fire(67) performs ignite to obtain heat using pan(66) for ignition, decorations(65) for fuel, 
+victim(68) performs get_heat_burn to obtain thermal_burn using large_fire(67) for heat, 
+victim(68) performs panic to obtain panic using victim(68) for danger, 
+
+ Init Objects: 
+decorations(65)
+pan(66)
+land_line(69)
+tap(70)
+first_aid_kit(71)
+
+ Dynamic Objects: 
+large_fire(67)
+victim(68)
+
+ Services: 
+decorations offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+pan offers ignition at level: 1
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers thermal_burn at level: 1
+victim offers panic at level: 1
+large_fire offers heat at level: 1
+
+ -------------------------------------------------- 
+ScenarioNo: 3 iteration: 1 Task to train: calm_person in the Laboratorium at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(97) for current, 
+talk_to_person using victim(98) for panic, 
+cool_burn using victim(98) for burn, tap(99) for water, 
+bandage_wound using victim(98) for injury, gauze_bandage(100) for bandage, 
+
+ Story: 
+victim(98) performs electrocute to obtain electric_burn using broken_electric_equipment(97) for current, 
+victim(98) performs panic to obtain panic using victim(98) for danger, 
+
+ Init Objects: 
+broken_electric_equipment(97)
+tap(99)
+gauze_bandage(100)
+
+ Dynamic Objects: 
+victim(98)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 1
+gauze_bandage offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers panic at level: 1
+
+ -------------------------------------------------- 
+ScenarioNo: 4 iteration: 3 Task to train: treat_burn in the Laboratorium at level: 2
+Planning: 
+clean_chemical using base solution(151) for base, hydrochloric acid(148) for chemical, 
+talk_to_person using victim(147) for panic, 
+cool_burn using victim(147) for burn, tap(149) for water, 
+remove_clothing using victim(147) for clothing_near_wound, 
+bandage_wound using victim(147) for injury, first_aid_kit(150) for bandage, 
+
+ Story: 
+victim(147) performs panic to obtain panic using victim(147) for danger, 
+victim(147) performs get_burn_chem to obtain chem_burn using hydrochloric acid(148) for chemical, 
+
+ Init Objects: 
+hydrochloric acid(148)
+tap(149)
+first_aid_kit(150)
+base solution(151)
+
+ Dynamic Objects: 
+victim(147)
+
+ Services: 
+base solution offers base at level: 1
+hydrochloric acid offers intoxicating_chemical at level: 2
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 2
+victim offers chem_burn at level: 2
+victim offers panic at level: 2
+victim offers clothing_near_wound at level: 2
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+ScenarioNo: 5 iteration: 3 Task to train: treat_burn in the Restaurant at level: 2
+Planning: 
+extinguish_fire using fire_extinguisher(189) for extinguisher, 
+talk_to_person using victim(183) for panic, 
+cool_burn using victim(183) for burn, tap(187) for water, 
+remove_clothing using victim(183) for clothing_near_wound, 
+bandage_wound using victim(183) for injury, first_aid_kit(188) for bandage, 
+
+ Story: 
+victim(183) performs panic to obtain panic using victim(183) for danger, 
+small_fire(186) performs ignite to obtain heat using pan(185) for ignition, extractor_hood(184) for fuel, 
+victim(183) performs get_heat_burn to obtain thermal_burn using small_fire(186) for heat, 
+
+ Init Objects: 
+extractor_hood(184)
+pan(185)
+tap(187)
+first_aid_kit(188)
+fire_extinguisher(189)
+
+ Dynamic Objects: 
+victim(183)
+small_fire(186)
+
+ Services: 
+extractor_hood offers sustaining_fuel at level: 2
+pan offers ignition at level: 2
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 2
+fire_extinguisher offers extinguisher at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+small_fire offers heat at level: 2
+victim offers clothing_near_wound at level: 2
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+ScenarioNo: 6 iteration: 2 Task to train: treat_burn in the Park at level: 1
+Planning: 
+talk_to_person using victim(211) for panic, 
+cool_burn using victim(211) for burn, fountain(214) for water, 
+bandage_wound using victim(211) for injury, tshirt(215) for bandage, 
+
+ Story: 
+victim(211) performs panic to obtain panic using victim(211) for danger, 
+victim(211) performs climb to obtain connector
+victim(211) performs connect to obtain current using tree(212) for connector, 
+victim(211) performs electrocute to obtain electric_burn using high_voltage_cable(213) for current, 
+
+ Init Objects: 
+tree(212)
+high_voltage_cable(213)
+fountain(214)
+tshirt(215)
+
+ Dynamic Objects: 
+victim(211)
+
+ Services: 
+tree offers connector at level: 1
+fountain offers water at level: 1
+high_voltage_cable offers current at level: 1
+tshirt offers bandage at level: 2
+victim offers electric_burn at level: 1
+victim offers panic at level: 1
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+ScenarioNo: 7 iteration: 0 Task to train: treat_burn in the Home at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(230) for current, 
+determine_unconsciousness using victim(231) for unconsciousness, 
+chin_lift1 using victim(231) for unconsciousness, victim(231) for breathing, 
+call_for_professional_aid using mobile_phone(232) for communication, 
+apply_recovery_position using victim(231) for unconsciousness, 
+bandage_wound using victim(231) for injury, towel(233) for bandage, 
+
+ Story: 
+victim(231) performs electrocute to obtain electric_burn using broken_electric_equipment(230) for current, 
+victim(231) performs electrocute to obtain unconsciousness using broken_electric_equipment(230) for current, 
+
+ Init Objects: 
+broken_electric_equipment(230)
+mobile_phone(232)
+towel(233)
+
+ Dynamic Objects: 
+victim(231)
+
+ Services: 
+mobile_phone offers communication at level: 1
+broken_electric_equipment offers current at level: 1
+towel offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers unconsciousness at level: 1
+victim offers breathing at level: 0
+
+ -------------------------------------------------- 
+ScenarioNo: 8 iteration: 4 Task to train: ensure_ABC in the Home at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(292) for communication, 
+determine_unconsciousness using victim(291) for unconsciousness, 
+chin_lift2 using victim(291) for unconsciousness, victim(291) for no_breathing, 
+call_for_professional_aid using mobile_phone(292) for communication, 
+perform_CPR using victim(291) for unconsciousness, victim(291) for no_breathing, 
+remove_clothing using victim(291) for clothing_near_wound, 
+bandage_wound using victim(291) for injury, gauze_bandage(293) for bandage, 
+
+ Story: 
+victim(291) performs get_heat_burn to obtain thermal_burn using pan(289) for heat, 
+victim(291) performs burn_throat_smoke to obtain no_breathing using large_fire(290) for smoke, 
+large_fire(290) performs spread to obtain smoke using curtains(288) for sustaining_fuel, 
+large_fire(290) performs ignite to obtain smoke using pan(289) for ignition, curtains(288) for fuel, 
+victim(291) performs burn_throat_smoke to obtain unconsciousness using large_fire(290) for smoke, 
+
+ Init Objects: 
+curtains(288)
+pan(289)
+mobile_phone(292)
+gauze_bandage(293)
+
+ Dynamic Objects: 
+large_fire(290)
+victim(291)
+
+ Services: 
+curtains offers sustaining_fuel at level: 1
+mobile_phone offers communication at level: 1
+pan offers ignition at level: 2
+gauze_bandage offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers unconsciousness at level: 2
+pan offers heat at level: 1
+large_fire offers smoke at level: 2
+victim offers no_breathing at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+ScenarioNo: 9 iteration: 3 Task to train: ensure_ABC in the Restaurant at level: 2
+Planning: 
+turn_off_power using broken_electric_equipment(307) for current, 
+determine_grogginess using victim(308) for grogginess, 
+cool_burn using victim(308) for burn, tap(309) for water, 
+remove_clothing using victim(308) for clothing_near_wound, 
+bandage_wound using victim(308) for injury, first_aid_kit(310) for bandage, 
+
+ Story: 
+victim(308) performs electrocute to obtain electric_burn using broken_electric_equipment(307) for current, 
+victim(308) performs electrocute to obtain grogginess using broken_electric_equipment(307) for current, 
+
+ Init Objects: 
+broken_electric_equipment(307)
+tap(309)
+first_aid_kit(310)
+
+ Dynamic Objects: 
+victim(308)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 2
+first_aid_kit offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+ScenarioNo: 10 iteration: 0 Task to train: ensure_ABC in the Laboratorium at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(318) for current, 
+determine_unconsciousness using victim(319) for unconsciousness, 
+chin_lift1 using victim(319) for unconsciousness, victim(319) for breathing, 
+call_for_professional_aid using mobile_phone(320) for communication, 
+apply_recovery_position using victim(319) for unconsciousness, 
+bandage_wound using victim(319) for injury, gauze_bandage(321) for bandage, 
+
+ Story: 
+victim(319) performs electrocute to obtain electric_burn using broken_electric_equipment(318) for current, 
+victim(319) performs electrocute to obtain unconsciousness using broken_electric_equipment(318) for current, 
+
+ Init Objects: 
+broken_electric_equipment(318)
+mobile_phone(320)
+gauze_bandage(321)
+
+ Dynamic Objects: 
+victim(319)
+
+ Services: 
+mobile_phone offers communication at level: 1
+broken_electric_equipment offers current at level: 1
+gauze_bandage offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers unconsciousness at level: 1
+victim offers breathing at level: 0
+
+ -------------------------------------------------- 
+ScenarioNo: 11 iteration: 2 Task to train: ensure_ABC in the Park at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using bystander(363) for communication, 
+determine_grogginess using victim(360) for grogginess, 
+cool_burn using victim(360) for burn, fountain(361) for water, 
+bandage_wound using victim(360) for injury, tshirt(362) for bandage, 
+
+ Story: 
+large_fire(359) performs spread to obtain heat using methylated_spirits(357) for sustaining_fuel, 
+large_fire(359) performs ignite to obtain heat using bbq(358) for ignition, methylated_spirits(357) for fuel, 
+victim(360) performs get_heat_burn to obtain thermal_burn using large_fire(359) for heat, 
+large_fire(359) performs spread to obtain smoke using methylated_spirits(357) for sustaining_fuel, 
+large_fire(359) performs ignite to obtain smoke using bbq(358) for ignition, methylated_spirits(357) for fuel, 
+victim(360) performs burn_throat_smoke to obtain grogginess using large_fire(359) for smoke, 
+
+ Init Objects: 
+methylated_spirits(357)
+bbq(358)
+fountain(361)
+tshirt(362)
+
+ Dynamic Objects: 
+large_fire(359)
+victim(360)
+bystander(363)
+
+ Services: 
+methylated_spirits offers sustaining_fuel at level: 1
+bystander offers communication at level: 1
+bbq offers ignition at level: 1
+fountain offers water at level: 1
+tshirt offers bandage at level: 2
+victim offers thermal_burn at level: 1
+large_fire offers heat at level: 1
+large_fire offers smoke at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+---------------------------------------------------------------
+ All scenarios: 
+ --------------------------------------------------------------- 
+Task to train: calm_person in the Park at level: 2
+Planning: 
+talk_to_person using victim(1) for panic, 
+cool_burn using victim(1) for burn, brook(3) for water, 
+remove_clothing using victim(1) for clothing_near_wound, 
+bandage_wound using victim(1) for injury, tshirt(4) for bandage, 
+
+ Story: 
+victim(1) performs climb to obtain connector
+victim(1) performs connect to obtain current using tree(0) for connector, 
+victim(1) performs electrocute to obtain electric_burn using high_voltage_cable(2) for current, 
+victim(1) performs panic to obtain panic using victim(1) for danger, 
+
+ Init Objects: 
+tree(0)
+high_voltage_cable(2)
+brook(3)
+tshirt(4)
+
+ Dynamic Objects: 
+victim(1)
+
+ Services: 
+tree offers connector at level: 1
+brook offers water at level: 2
+high_voltage_cable offers current at level: 2
+tshirt offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers panic at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Park at level: 2
+Planning: 
+extinguish_fire using tough_coat(9) for extinguisher, 
+talk_to_person using victim(8) for panic, 
+cool_burn using victim(8) for burn, brook(10) for water, 
+remove_clothing using victim(8) for clothing_near_wound, 
+bandage_wound using victim(8) for injury, tshirt(11) for bandage, 
+
+ Story: 
+small_fire(7) performs ignite to obtain heat using bbq(6) for ignition, methylated_spirits(5) for fuel, 
+victim(8) performs get_heat_burn to obtain thermal_burn using small_fire(7) for heat, 
+small_fire(7) performs ignite to obtain danger using bbq(6) for ignition, methylated_spirits(5) for fuel, 
+victim(8) performs panic to obtain panic using small_fire(7) for danger, 
+
+ Init Objects: 
+methylated_spirits(5)
+bbq(6)
+tough_coat(9)
+brook(10)
+tshirt(11)
+
+ Dynamic Objects: 
+small_fire(7)
+victim(8)
+
+ Services: 
+methylated_spirits offers sustaining_fuel at level: 1
+bbq offers ignition at level: 1
+brook offers water at level: 2
+tshirt offers bandage at level: 2
+tough_coat offers extinguisher at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+small_fire offers heat at level: 2
+victim offers clothing_near_wound at level: 2
+small_fire offers danger at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Park at level: 2
+Planning: 
+extinguish_fire using tough_coat(16) for extinguisher, 
+talk_to_person using bystander(15) for panic, 
+
+ Story: 
+small_fire(14) performs ignite to obtain danger using bbq(13) for ignition, clothing(12) for fuel, 
+bystander(15) performs panic to obtain panic using small_fire(14) for danger, 
+
+ Init Objects: 
+clothing(12)
+bbq(13)
+tough_coat(16)
+
+ Dynamic Objects: 
+small_fire(14)
+bystander(15)
+
+ Services: 
+bbq offers ignition at level: 1
+clothing offers fuel at level: 1
+tough_coat offers extinguisher at level: 2
+bystander offers panic at level: 2
+small_fire offers danger at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Park at level: 2
+Planning: 
+extinguish_fire using tough_coat(21) for extinguisher, 
+talk_to_person using victim(20) for panic, 
+cool_burn using victim(20) for burn, fountain(22) for water, 
+remove_clothing using victim(20) for clothing_near_wound, 
+bandage_wound using victim(20) for injury, tshirt(23) for bandage, 
+
+ Story: 
+small_fire(19) performs ignite to obtain heat using camp_fire(18) for ignition, methylated_spirits(17) for fuel, 
+victim(20) performs get_heat_burn to obtain thermal_burn using small_fire(19) for heat, 
+small_fire(19) performs ignite to obtain danger using camp_fire(18) for ignition, methylated_spirits(17) for fuel, 
+victim(20) performs panic to obtain panic using small_fire(19) for danger, 
+
+ Init Objects: 
+methylated_spirits(17)
+camp_fire(18)
+tough_coat(21)
+fountain(22)
+tshirt(23)
+
+ Dynamic Objects: 
+small_fire(19)
+victim(20)
+
+ Services: 
+methylated_spirits offers sustaining_fuel at level: 1
+camp_fire offers ignition at level: 1
+fountain offers water at level: 2
+tshirt offers bandage at level: 2
+tough_coat offers extinguisher at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+small_fire offers heat at level: 2
+victim offers clothing_near_wound at level: 2
+small_fire offers danger at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Park at level: 2
+Planning: 
+clean_chemical using base solution(26) for base, hydrochloric acid(24) for chemical, 
+talk_to_person using victim(25) for panic, 
+cool_burn using victim(25) for burn, brook(27) for water, 
+remove_clothing using victim(25) for clothing_near_wound, 
+bandage_wound using victim(25) for injury, tshirt(28) for bandage, 
+
+ Story: 
+victim(25) performs get_burn_chem to obtain chem_burn using hydrochloric acid(24) for chemical, 
+victim(25) performs panic to obtain panic using victim(25) for danger, 
+
+ Init Objects: 
+hydrochloric acid(24)
+base solution(26)
+brook(27)
+tshirt(28)
+
+ Dynamic Objects: 
+victim(25)
+
+ Services: 
+base solution offers base at level: 1
+hydrochloric acid offers intoxicating_chemical at level: 2
+brook offers water at level: 2
+tshirt offers bandage at level: 2
+victim offers chem_burn at level: 2
+victim offers panic at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Home at level: 2
+Planning: 
+talk_to_person using victim(30) for panic, 
+cool_burn using victim(30) for burn, tap(31) for water, 
+remove_clothing using victim(30) for clothing_near_wound, 
+bandage_wound using victim(30) for injury, towel(32) for bandage, 
+
+ Story: 
+victim(30) performs get_burn_chem to obtain chem_burn using bleach(29) for chemical, 
+victim(30) performs panic to obtain panic using victim(30) for danger, 
+
+ Init Objects: 
+bleach(29)
+tap(31)
+towel(32)
+
+ Dynamic Objects: 
+victim(30)
+
+ Services: 
+bleach offers intoxicating_chemical at level: 1
+tap offers water at level: 1
+towel offers bandage at level: 2
+victim offers chem_burn at level: 2
+victim offers panic at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Home at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(38) for communication, 
+talk_to_person using victim(37) for panic, 
+cool_burn using victim(37) for burn, tap(39) for water, 
+remove_clothing using victim(37) for clothing_near_wound, 
+bandage_wound using victim(37) for injury, towel(33) for bandage, 
+
+ Story: 
+victim(37) performs get_heat_burn to obtain thermal_burn using pan(34) for heat, 
+large_fire(36) performs spread to obtain danger using curtains(35) for sustaining_fuel, 
+large_fire(36) performs ignite to obtain danger using pan(34) for ignition, towel(33) for fuel, 
+victim(37) performs panic to obtain panic using large_fire(36) for danger, 
+
+ Init Objects: 
+towel(33)
+pan(34)
+curtains(35)
+mobile_phone(38)
+tap(39)
+
+ Dynamic Objects: 
+large_fire(36)
+victim(37)
+
+ Services: 
+curtains offers sustaining_fuel at level: 1
+mobile_phone offers communication at level: 1
+pan offers ignition at level: 2
+tap offers water at level: 1
+towel offers fuel at level: 1
+towel offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+pan offers heat at level: 1
+victim offers clothing_near_wound at level: 2
+large_fire offers danger at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Home at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(45) for communication, 
+talk_to_person using victim(44) for panic, 
+cool_burn using victim(44) for burn, tap(46) for water, 
+remove_clothing using victim(44) for clothing_near_wound, 
+bandage_wound using victim(44) for injury, gauze_bandage(47) for bandage, 
+
+ Story: 
+victim(44) performs get_heat_burn to obtain thermal_burn using pan(41) for heat, 
+large_fire(43) performs spread to obtain danger using curtains(42) for sustaining_fuel, 
+large_fire(43) performs ignite to obtain danger using pan(41) for ignition, napkin(40) for fuel, 
+victim(44) performs panic to obtain panic using large_fire(43) for danger, 
+
+ Init Objects: 
+napkin(40)
+pan(41)
+curtains(42)
+land_line(45)
+tap(46)
+gauze_bandage(47)
+
+ Dynamic Objects: 
+large_fire(43)
+victim(44)
+
+ Services: 
+curtains offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+pan offers ignition at level: 2
+tap offers water at level: 1
+napkin offers fuel at level: 1
+gauze_bandage offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+pan offers heat at level: 1
+victim offers clothing_near_wound at level: 2
+large_fire offers danger at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Home at level: 2
+Planning: 
+extinguish_fire using tough_coat(52) for extinguisher, 
+talk_to_person using victim(51) for panic, 
+cool_burn using victim(51) for burn, tap(53) for water, 
+remove_clothing using victim(51) for clothing_near_wound, 
+bandage_wound using victim(51) for injury, towel(48) for bandage, 
+
+ Story: 
+small_fire(50) performs ignite to obtain heat using pan(49) for ignition, towel(48) for fuel, 
+victim(51) performs get_heat_burn to obtain thermal_burn using small_fire(50) for heat, 
+victim(51) performs panic to obtain panic using victim(51) for danger, 
+
+ Init Objects: 
+towel(48)
+pan(49)
+tough_coat(52)
+tap(53)
+
+ Dynamic Objects: 
+small_fire(50)
+victim(51)
+
+ Services: 
+pan offers ignition at level: 2
+tap offers water at level: 1
+towel offers fuel at level: 1
+towel offers bandage at level: 2
+tough_coat offers extinguisher at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+small_fire offers heat at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Home at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(58) for communication, 
+talk_to_person using victim(57) for panic, 
+cool_burn using victim(57) for burn, tap(59) for water, 
+remove_clothing using victim(57) for clothing_near_wound, 
+bandage_wound using victim(57) for injury, gauze_bandage(60) for bandage, 
+
+ Story: 
+victim(57) performs get_heat_burn to obtain thermal_burn using pan(55) for heat, 
+large_fire(56) performs spread to obtain danger using curtains(54) for sustaining_fuel, 
+large_fire(56) performs ignite to obtain danger using pan(55) for ignition, curtains(54) for fuel, 
+victim(57) performs panic to obtain panic using large_fire(56) for danger, 
+
+ Init Objects: 
+curtains(54)
+pan(55)
+land_line(58)
+tap(59)
+gauze_bandage(60)
+
+ Dynamic Objects: 
+large_fire(56)
+victim(57)
+
+ Services: 
+curtains offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+pan offers ignition at level: 2
+tap offers water at level: 1
+gauze_bandage offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+pan offers heat at level: 1
+victim offers clothing_near_wound at level: 2
+large_fire offers danger at level: 2
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Restaurant at level: 1
+Planning: 
+talk_to_person using victim(62) for panic, 
+cool_burn using victim(62) for burn, tap(63) for water, 
+bandage_wound using victim(62) for injury, towel(64) for bandage, 
+
+ Story: 
+victim(62) performs get_burn_chem to obtain chem_burn using ammonia(61) for chemical, 
+victim(62) performs panic to obtain panic using victim(62) for danger, 
+
+ Init Objects: 
+ammonia(61)
+tap(63)
+towel(64)
+
+ Dynamic Objects: 
+victim(62)
+
+ Services: 
+ammonia offers burning_chemical at level: 1
+tap offers water at level: 1
+towel offers bandage at level: 1
+victim offers chem_burn at level: 1
+victim offers panic at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Restaurant at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(69) for communication, 
+talk_to_person using victim(68) for panic, 
+cool_burn using victim(68) for burn, tap(70) for water, 
+bandage_wound using victim(68) for injury, first_aid_kit(71) for bandage, 
+
+ Story: 
+large_fire(67) performs spread to obtain heat using decorations(65) for sustaining_fuel, 
+large_fire(67) performs ignite to obtain heat using pan(66) for ignition, decorations(65) for fuel, 
+victim(68) performs get_heat_burn to obtain thermal_burn using large_fire(67) for heat, 
+victim(68) performs panic to obtain panic using victim(68) for danger, 
+
+ Init Objects: 
+decorations(65)
+pan(66)
+land_line(69)
+tap(70)
+first_aid_kit(71)
+
+ Dynamic Objects: 
+large_fire(67)
+victim(68)
+
+ Services: 
+decorations offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+pan offers ignition at level: 1
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers thermal_burn at level: 1
+victim offers panic at level: 1
+large_fire offers heat at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Restaurant at level: 1
+Planning: 
+turn_off_power using toaster(73) for current, 
+talk_to_person using victim(74) for panic, 
+cool_burn using victim(74) for burn, tap(75) for water, 
+bandage_wound using victim(74) for injury, towel(76) for bandage, 
+
+ Story: 
+victim(74) performs pry to obtain current using knife(72) for metal_prier, 
+victim(74) performs electrocute to obtain electric_burn using toaster(73) for current, 
+victim(74) performs panic to obtain panic using victim(74) for danger, 
+
+ Init Objects: 
+knife(72)
+toaster(73)
+tap(75)
+towel(76)
+
+ Dynamic Objects: 
+victim(74)
+
+ Services: 
+knife offers metal_prier at level: 1
+tap offers water at level: 1
+toaster offers current at level: 1
+towel offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers panic at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Restaurant at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using bystander(82) for communication, 
+talk_to_person using victim(81) for panic, 
+cool_burn using victim(81) for burn, tap(83) for water, 
+bandage_wound using victim(81) for injury, towel(77) for bandage, 
+
+ Story: 
+large_fire(80) performs spread to obtain heat using decorations(79) for sustaining_fuel, 
+large_fire(80) performs ignite to obtain heat using gas_stove(78) for ignition, towel(77) for fuel, 
+victim(81) performs get_heat_burn to obtain thermal_burn using large_fire(80) for heat, 
+victim(81) performs panic to obtain panic using victim(81) for danger, 
+
+ Init Objects: 
+towel(77)
+gas_stove(78)
+decorations(79)
+tap(83)
+
+ Dynamic Objects: 
+large_fire(80)
+victim(81)
+bystander(82)
+
+ Services: 
+decorations offers sustaining_fuel at level: 1
+bystander offers communication at level: 1
+gas_stove offers ignition at level: 1
+tap offers water at level: 1
+towel offers fuel at level: 1
+towel offers bandage at level: 1
+victim offers thermal_burn at level: 1
+victim offers panic at level: 1
+large_fire offers heat at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Restaurant at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(88) for communication, 
+talk_to_person using victim(87) for panic, 
+cool_burn using victim(87) for burn, tap(89) for water, 
+bandage_wound using victim(87) for injury, towel(90) for bandage, 
+
+ Story: 
+large_fire(86) performs spread to obtain heat using extractor_hood(84) for sustaining_fuel, 
+large_fire(86) performs ignite to obtain heat using candle(85) for ignition, extractor_hood(84) for fuel, 
+victim(87) performs get_heat_burn to obtain thermal_burn using large_fire(86) for heat, 
+victim(87) performs panic to obtain panic using victim(87) for danger, 
+
+ Init Objects: 
+extractor_hood(84)
+candle(85)
+land_line(88)
+tap(89)
+towel(90)
+
+ Dynamic Objects: 
+large_fire(86)
+victim(87)
+
+ Services: 
+extractor_hood offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+candle offers ignition at level: 1
+tap offers water at level: 1
+towel offers bandage at level: 1
+victim offers thermal_burn at level: 1
+victim offers panic at level: 1
+large_fire offers heat at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Laboratorium at level: 1
+Planning: 
+talk_to_person using victim(94) for panic, 
+cool_burn using victim(94) for burn, tap(95) for water, 
+bandage_wound using victim(94) for injury, first_aid_kit(96) for bandage, 
+
+ Story: 
+chem_reaction(93) performs react to obtain heat using butyllithium(91) for water_reactor, ice(92) for drop_of_water, 
+victim(94) performs get_heat_burn to obtain thermal_burn using chem_reaction(93) for heat, 
+victim(94) performs panic to obtain panic using victim(94) for danger, 
+
+ Init Objects: 
+butyllithium(91)
+ice(92)
+tap(95)
+first_aid_kit(96)
+
+ Dynamic Objects: 
+chem_reaction(93)
+victim(94)
+
+ Services: 
+butyllithium offers water_reactor at level: 1
+ice offers drop_of_water at level: 1
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers thermal_burn at level: 1
+victim offers panic at level: 1
+chem_reaction offers heat at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Laboratorium at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(97) for current, 
+talk_to_person using victim(98) for panic, 
+cool_burn using victim(98) for burn, tap(99) for water, 
+bandage_wound using victim(98) for injury, gauze_bandage(100) for bandage, 
+
+ Story: 
+victim(98) performs electrocute to obtain electric_burn using broken_electric_equipment(97) for current, 
+victim(98) performs panic to obtain panic using victim(98) for danger, 
+
+ Init Objects: 
+broken_electric_equipment(97)
+tap(99)
+gauze_bandage(100)
+
+ Dynamic Objects: 
+victim(98)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 1
+gauze_bandage offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers panic at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Laboratorium at level: 1
+Planning: 
+clean_chemical using base solution(103) for base, hydrochloric acid(101) for chemical, 
+talk_to_person using victim(102) for panic, 
+cool_burn using victim(102) for burn, tap(104) for water, 
+bandage_wound using victim(102) for injury, gauze_bandage(105) for bandage, 
+
+ Story: 
+victim(102) performs get_burn_chem to obtain chem_burn using hydrochloric acid(101) for chemical, 
+victim(102) performs panic to obtain panic using hydrochloric acid(101) for danger, 
+
+ Init Objects: 
+hydrochloric acid(101)
+base solution(103)
+tap(104)
+gauze_bandage(105)
+
+ Dynamic Objects: 
+victim(102)
+
+ Services: 
+base solution offers base at level: 1
+hydrochloric acid offers burning_chemical at level: 1
+tap offers water at level: 1
+gauze_bandage offers bandage at level: 1
+victim offers chem_burn at level: 1
+victim offers panic at level: 1
+hydrochloric acid offers danger at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Laboratorium at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(106) for current, 
+talk_to_person using victim(107) for panic, 
+cool_burn using victim(107) for burn, tap(108) for water, 
+bandage_wound using victim(107) for injury, first_aid_kit(109) for bandage, 
+
+ Story: 
+victim(107) performs electrocute to obtain electric_burn using broken_electric_equipment(106) for current, 
+victim(107) performs panic to obtain panic using victim(107) for danger, 
+
+ Init Objects: 
+broken_electric_equipment(106)
+tap(108)
+first_aid_kit(109)
+
+ Dynamic Objects: 
+victim(107)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers panic at level: 1
+
+ -------------------------------------------------- 
+Task to train: calm_person in the Laboratorium at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(110) for current, 
+talk_to_person using victim(111) for panic, 
+cool_burn using victim(111) for burn, tap(112) for water, 
+bandage_wound using victim(111) for injury, first_aid_kit(113) for bandage, 
+
+ Story: 
+victim(111) performs electrocute to obtain electric_burn using broken_electric_equipment(110) for current, 
+victim(111) performs panic to obtain panic using victim(111) for danger, 
+
+ Init Objects: 
+broken_electric_equipment(110)
+tap(112)
+first_aid_kit(113)
+
+ Dynamic Objects: 
+victim(111)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers panic at level: 1
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Laboratorium at level: 2
+Planning: 
+clean_chemical using base solution(133) for base, hydrochloric acid(122) for chemical, 
+talk_to_person using victim(114) for panic, 
+cool_burn using victim(114) for burn, tap(131) for water, 
+remove_clothing using victim(114) for clothing_near_wound, 
+bandage_wound using victim(114) for injury, gauze_bandage(132) for bandage, 
+
+ Story: 
+victim(114) performs panic to obtain panic using victim(114) for danger, 
+victim(114) performs get_burn_chem to obtain chem_burn using hydrochloric acid(122) for chemical, 
+
+ Init Objects: 
+hydrochloric acid(122)
+tap(131)
+gauze_bandage(132)
+base solution(133)
+
+ Dynamic Objects: 
+victim(114)
+
+ Services: 
+base solution offers base at level: 1
+hydrochloric acid offers burning_chemical at level: 2
+tap offers water at level: 1
+gauze_bandage offers bandage at level: 2
+victim offers chem_burn at level: 2
+victim offers panic at level: 2
+victim offers clothing_near_wound at level: 2
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Laboratorium at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(142) for communication, 
+talk_to_person using victim(134) for panic, 
+cool_burn using victim(134) for burn, tap(140) for water, 
+remove_clothing using victim(134) for clothing_near_wound, 
+bandage_wound using victim(134) for injury, gauze_bandage(141) for bandage, 
+
+ Story: 
+victim(134) performs panic to obtain panic using victim(134) for danger, 
+large_fire(139) performs spread to obtain heat using organic_solvent(135) for sustaining_fuel, 
+chem_reaction(138) performs react to obtain ignition using lithium_aluminium_hydride(136) for water_reactor, organice_garbage_bin(137) for drop_of_water, 
+large_fire(139) performs ignite to obtain heat using chem_reaction(138) for ignition, organic_solvent(135) for fuel, 
+victim(134) performs get_heat_burn to obtain thermal_burn using large_fire(139) for heat, 
+
+ Init Objects: 
+organic_solvent(135)
+lithium_aluminium_hydride(136)
+organice_garbage_bin(137)
+tap(140)
+gauze_bandage(141)
+mobile_phone(142)
+
+ Dynamic Objects: 
+victim(134)
+chem_reaction(138)
+large_fire(139)
+
+ Services: 
+lithium_aluminium_hydride offers water_reactor at level: 2
+organice_garbage_bin offers drop_of_water at level: 2
+organic_solvent offers sustaining_fuel at level: 1
+mobile_phone offers communication at level: 1
+chem_reaction offers ignition at level: 2
+tap offers water at level: 1
+gauze_bandage offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+large_fire offers heat at level: 2
+victim offers clothing_near_wound at level: 2
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Laboratorium at level: 2
+Planning: 
+turn_off_power using broken_electric_equipment(143) for current, 
+determine_grogginess using victim(144) for grogginess, 
+cool_burn using victim(144) for burn, tap(145) for water, 
+remove_clothing using victim(144) for clothing_near_wound, 
+bandage_wound using victim(144) for injury, first_aid_kit(146) for bandage, 
+
+ Story: 
+victim(144) performs electrocute to obtain electric_burn using broken_electric_equipment(143) for current, 
+victim(144) performs electrocute to obtain grogginess using broken_electric_equipment(143) for current, 
+
+ Init Objects: 
+broken_electric_equipment(143)
+tap(145)
+first_aid_kit(146)
+
+ Dynamic Objects: 
+victim(144)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 2
+first_aid_kit offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Laboratorium at level: 2
+Planning: 
+clean_chemical using base solution(151) for base, hydrochloric acid(148) for chemical, 
+talk_to_person using victim(147) for panic, 
+cool_burn using victim(147) for burn, tap(149) for water, 
+remove_clothing using victim(147) for clothing_near_wound, 
+bandage_wound using victim(147) for injury, first_aid_kit(150) for bandage, 
+
+ Story: 
+victim(147) performs panic to obtain panic using victim(147) for danger, 
+victim(147) performs get_burn_chem to obtain chem_burn using hydrochloric acid(148) for chemical, 
+
+ Init Objects: 
+hydrochloric acid(148)
+tap(149)
+first_aid_kit(150)
+base solution(151)
+
+ Dynamic Objects: 
+victim(147)
+
+ Services: 
+base solution offers base at level: 1
+hydrochloric acid offers intoxicating_chemical at level: 2
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 2
+victim offers chem_burn at level: 2
+victim offers panic at level: 2
+victim offers clothing_near_wound at level: 2
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Laboratorium at level: 2
+Planning: 
+turn_off_power using broken_electric_equipment(160) for current, 
+talk_to_person using victim(152) for panic, 
+cool_burn using victim(152) for burn, tap(161) for water, 
+remove_clothing using victim(152) for clothing_near_wound, 
+bandage_wound using victim(152) for injury, gauze_bandage(162) for bandage, 
+
+ Story: 
+victim(152) performs panic to obtain panic using victim(152) for danger, 
+victim(152) performs electrocute to obtain electric_burn using broken_electric_equipment(160) for current, 
+
+ Init Objects: 
+broken_electric_equipment(160)
+tap(161)
+gauze_bandage(162)
+
+ Dynamic Objects: 
+victim(152)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 2
+gauze_bandage offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers panic at level: 2
+victim offers clothing_near_wound at level: 2
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Restaurant at level: 2
+Planning: 
+turn_off_power using broken_electric_equipment(163) for current, 
+determine_grogginess using victim(164) for grogginess, 
+cool_burn using victim(164) for burn, tap(165) for water, 
+remove_clothing using victim(164) for clothing_near_wound, 
+bandage_wound using victim(164) for injury, first_aid_kit(166) for bandage, 
+
+ Story: 
+victim(164) performs electrocute to obtain electric_burn using broken_electric_equipment(163) for current, 
+victim(164) performs electrocute to obtain grogginess using broken_electric_equipment(163) for current, 
+
+ Init Objects: 
+broken_electric_equipment(163)
+tap(165)
+first_aid_kit(166)
+
+ Dynamic Objects: 
+victim(164)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 2
+first_aid_kit offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Restaurant at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using bystander(171) for communication, 
+determine_unconsciousness using victim(170) for unconsciousness, 
+chin_lift3 using victim(170) for troubled_breathing, victim(170) for unconsciousness, 
+call_for_professional_aid using bystander(171) for communication, 
+apply_recovery_position using victim(170) for unconsciousness, 
+remove_clothing using victim(170) for clothing_near_wound, 
+bandage_wound using victim(170) for injury, first_aid_kit(172) for bandage, 
+
+ Story: 
+victim(170) performs get_heat_burn to obtain thermal_burn using pan(168) for heat, 
+victim(170) performs burn_throat_smoke to obtain troubled_breathing using large_fire(169) for smoke, 
+large_fire(169) performs spread to obtain smoke using extractor_hood(167) for sustaining_fuel, 
+large_fire(169) performs ignite to obtain smoke using pan(168) for ignition, extractor_hood(167) for fuel, 
+victim(170) performs burn_throat_smoke to obtain unconsciousness using large_fire(169) for smoke, 
+
+ Init Objects: 
+extractor_hood(167)
+pan(168)
+first_aid_kit(172)
+
+ Dynamic Objects: 
+large_fire(169)
+victim(170)
+bystander(171)
+
+ Services: 
+victim offers troubled_breathing at level: 2
+extractor_hood offers sustaining_fuel at level: 2
+bystander offers communication at level: 1
+pan offers ignition at level: 2
+first_aid_kit offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers unconsciousness at level: 2
+pan offers heat at level: 1
+large_fire offers smoke at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Restaurant at level: 2
+Planning: 
+turn_off_power using toaster(180) for current, 
+talk_to_person using victim(173) for panic, 
+cool_burn using victim(173) for burn, tap(181) for water, 
+remove_clothing using victim(173) for clothing_near_wound, 
+bandage_wound using victim(173) for injury, first_aid_kit(182) for bandage, 
+
+ Story: 
+victim(173) performs panic to obtain panic using victim(173) for danger, 
+victim(173) performs pry to obtain current using knife(179) for metal_prier, 
+victim(173) performs electrocute to obtain electric_burn using toaster(180) for current, 
+
+ Init Objects: 
+knife(179)
+toaster(180)
+tap(181)
+first_aid_kit(182)
+
+ Dynamic Objects: 
+victim(173)
+
+ Services: 
+knife offers metal_prier at level: 1
+tap offers water at level: 1
+toaster offers current at level: 2
+first_aid_kit offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers panic at level: 2
+victim offers clothing_near_wound at level: 2
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Restaurant at level: 2
+Planning: 
+extinguish_fire using fire_extinguisher(189) for extinguisher, 
+talk_to_person using victim(183) for panic, 
+cool_burn using victim(183) for burn, tap(187) for water, 
+remove_clothing using victim(183) for clothing_near_wound, 
+bandage_wound using victim(183) for injury, first_aid_kit(188) for bandage, 
+
+ Story: 
+victim(183) performs panic to obtain panic using victim(183) for danger, 
+small_fire(186) performs ignite to obtain heat using pan(185) for ignition, extractor_hood(184) for fuel, 
+victim(183) performs get_heat_burn to obtain thermal_burn using small_fire(186) for heat, 
+
+ Init Objects: 
+extractor_hood(184)
+pan(185)
+tap(187)
+first_aid_kit(188)
+fire_extinguisher(189)
+
+ Dynamic Objects: 
+victim(183)
+small_fire(186)
+
+ Services: 
+extractor_hood offers sustaining_fuel at level: 2
+pan offers ignition at level: 2
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 2
+fire_extinguisher offers extinguisher at level: 2
+victim offers thermal_burn at level: 2
+victim offers panic at level: 2
+small_fire offers heat at level: 2
+victim offers clothing_near_wound at level: 2
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Restaurant at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using bystander(194) for communication, 
+determine_unconsciousness using victim(193) for unconsciousness, 
+chin_lift2 using victim(193) for unconsciousness, victim(193) for no_breathing, 
+call_for_professional_aid using bystander(194) for communication, 
+perform_CPR using victim(193) for unconsciousness, victim(193) for no_breathing, 
+remove_clothing using victim(193) for clothing_near_wound, 
+bandage_wound using victim(193) for injury, towel(195) for bandage, 
+
+ Story: 
+victim(193) performs get_heat_burn to obtain thermal_burn using pan(191) for heat, 
+victim(193) performs burn_throat_smoke to obtain no_breathing using large_fire(192) for smoke, 
+large_fire(192) performs spread to obtain smoke using extractor_hood(190) for sustaining_fuel, 
+large_fire(192) performs ignite to obtain smoke using pan(191) for ignition, extractor_hood(190) for fuel, 
+victim(193) performs burn_throat_smoke to obtain unconsciousness using large_fire(192) for smoke, 
+
+ Init Objects: 
+extractor_hood(190)
+pan(191)
+towel(195)
+
+ Dynamic Objects: 
+large_fire(192)
+victim(193)
+bystander(194)
+
+ Services: 
+extractor_hood offers sustaining_fuel at level: 2
+bystander offers communication at level: 1
+pan offers ignition at level: 2
+towel offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers unconsciousness at level: 2
+pan offers heat at level: 1
+large_fire offers smoke at level: 2
+victim offers no_breathing at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Park at level: 1
+Planning: 
+extinguish_fire using tough_coat(203) for extinguisher, 
+determine_grogginess using victim(200) for grogginess, 
+cool_burn using victim(200) for burn, fountain(201) for water, 
+bandage_wound using victim(200) for injury, tshirt(202) for bandage, 
+
+ Story: 
+small_fire(199) performs ignite to obtain heat using camp_fire(198) for ignition, dry_vegetation(197) for fuel, 
+victim(200) performs get_heat_burn to obtain thermal_burn using small_fire(199) for heat, 
+victim(200) performs fall_down to obtain grogginess using rocks(196) for obstacle, victim(200) for danger, 
+
+ Init Objects: 
+rocks(196)
+dry_vegetation(197)
+camp_fire(198)
+fountain(201)
+tshirt(202)
+tough_coat(203)
+
+ Dynamic Objects: 
+small_fire(199)
+victim(200)
+
+ Services: 
+rocks offers obstacle at level: 1
+dry_vegetation offers sustaining_fuel at level: 1
+camp_fire offers ignition at level: 1
+fountain offers water at level: 1
+tshirt offers bandage at level: 2
+tough_coat offers extinguisher at level: 1
+victim offers thermal_burn at level: 1
+small_fire offers heat at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Park at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(210) for communication, 
+determine_grogginess using victim(207) for grogginess, 
+cool_burn using victim(207) for burn, fountain(208) for water, 
+bandage_wound using victim(207) for injury, tshirt(209) for bandage, 
+
+ Story: 
+large_fire(206) performs spread to obtain heat using dry_vegetation(204) for sustaining_fuel, 
+large_fire(206) performs ignite to obtain heat using camp_fire(205) for ignition, dry_vegetation(204) for fuel, 
+victim(207) performs get_heat_burn to obtain thermal_burn using large_fire(206) for heat, 
+large_fire(206) performs spread to obtain smoke using dry_vegetation(204) for sustaining_fuel, 
+large_fire(206) performs ignite to obtain smoke using camp_fire(205) for ignition, dry_vegetation(204) for fuel, 
+victim(207) performs burn_throat_smoke to obtain grogginess using large_fire(206) for smoke, 
+
+ Init Objects: 
+dry_vegetation(204)
+camp_fire(205)
+fountain(208)
+tshirt(209)
+mobile_phone(210)
+
+ Dynamic Objects: 
+large_fire(206)
+victim(207)
+
+ Services: 
+dry_vegetation offers sustaining_fuel at level: 1
+mobile_phone offers communication at level: 1
+camp_fire offers ignition at level: 1
+fountain offers water at level: 1
+tshirt offers bandage at level: 2
+victim offers thermal_burn at level: 1
+large_fire offers heat at level: 1
+large_fire offers smoke at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Park at level: 1
+Planning: 
+talk_to_person using victim(211) for panic, 
+cool_burn using victim(211) for burn, fountain(214) for water, 
+bandage_wound using victim(211) for injury, tshirt(215) for bandage, 
+
+ Story: 
+victim(211) performs panic to obtain panic using victim(211) for danger, 
+victim(211) performs climb to obtain connector
+victim(211) performs connect to obtain current using tree(212) for connector, 
+victim(211) performs electrocute to obtain electric_burn using high_voltage_cable(213) for current, 
+
+ Init Objects: 
+tree(212)
+high_voltage_cable(213)
+fountain(214)
+tshirt(215)
+
+ Dynamic Objects: 
+victim(211)
+
+ Services: 
+tree offers connector at level: 1
+fountain offers water at level: 1
+high_voltage_cable offers current at level: 1
+tshirt offers bandage at level: 2
+victim offers electric_burn at level: 1
+victim offers panic at level: 1
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Park at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(223) for communication, 
+determine_grogginess using victim(220) for grogginess, 
+cool_burn using victim(220) for burn, fountain(221) for water, 
+bandage_wound using victim(220) for injury, tshirt(222) for bandage, 
+
+ Story: 
+large_fire(219) performs spread to obtain heat using dry_vegetation(218) for sustaining_fuel, 
+large_fire(219) performs ignite to obtain heat using camp_fire(217) for ignition, clothing(216) for fuel, 
+victim(220) performs get_heat_burn to obtain thermal_burn using large_fire(219) for heat, 
+large_fire(219) performs spread to obtain smoke using dry_vegetation(218) for sustaining_fuel, 
+large_fire(219) performs ignite to obtain smoke using camp_fire(217) for ignition, clothing(216) for fuel, 
+victim(220) performs burn_throat_smoke to obtain grogginess using large_fire(219) for smoke, 
+
+ Init Objects: 
+clothing(216)
+camp_fire(217)
+dry_vegetation(218)
+fountain(221)
+tshirt(222)
+mobile_phone(223)
+
+ Dynamic Objects: 
+large_fire(219)
+victim(220)
+
+ Services: 
+dry_vegetation offers sustaining_fuel at level: 1
+mobile_phone offers communication at level: 1
+camp_fire offers ignition at level: 1
+fountain offers water at level: 1
+clothing offers fuel at level: 1
+tshirt offers bandage at level: 2
+victim offers thermal_burn at level: 1
+large_fire offers heat at level: 1
+large_fire offers smoke at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Park at level: 1
+Planning: 
+determine_grogginess using victim(226) for grogginess, 
+cool_burn using victim(226) for burn, fountain(228) for water, 
+bandage_wound using victim(226) for injury, tshirt(229) for bandage, 
+
+ Story: 
+victim(226) performs climb to obtain connector
+victim(226) performs connect to obtain current using tree(225) for connector, 
+victim(226) performs electrocute to obtain electric_burn using high_voltage_cable(227) for current, 
+victim(226) performs fall_down to obtain grogginess using rocks(224) for obstacle, victim(226) for danger, 
+
+ Init Objects: 
+rocks(224)
+tree(225)
+high_voltage_cable(227)
+fountain(228)
+tshirt(229)
+
+ Dynamic Objects: 
+victim(226)
+
+ Services: 
+tree offers connector at level: 1
+rocks offers obstacle at level: 1
+fountain offers water at level: 1
+high_voltage_cable offers current at level: 1
+tshirt offers bandage at level: 2
+victim offers electric_burn at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Home at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(230) for current, 
+determine_unconsciousness using victim(231) for unconsciousness, 
+chin_lift1 using victim(231) for unconsciousness, victim(231) for breathing, 
+call_for_professional_aid using mobile_phone(232) for communication, 
+apply_recovery_position using victim(231) for unconsciousness, 
+bandage_wound using victim(231) for injury, towel(233) for bandage, 
+
+ Story: 
+victim(231) performs electrocute to obtain electric_burn using broken_electric_equipment(230) for current, 
+victim(231) performs electrocute to obtain unconsciousness using broken_electric_equipment(230) for current, 
+
+ Init Objects: 
+broken_electric_equipment(230)
+mobile_phone(232)
+towel(233)
+
+ Dynamic Objects: 
+victim(231)
+
+ Services: 
+mobile_phone offers communication at level: 1
+broken_electric_equipment offers current at level: 1
+towel offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers unconsciousness at level: 1
+victim offers breathing at level: 0
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Home at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(240) for communication, 
+determine_grogginess using victim(238) for grogginess, 
+cool_burn using victim(238) for burn, tap(239) for water, 
+bandage_wound using victim(238) for injury, towel(234) for bandage, 
+
+ Story: 
+large_fire(237) performs spread to obtain heat using decorations(236) for sustaining_fuel, 
+large_fire(237) performs ignite to obtain heat using candle(235) for ignition, towel(234) for fuel, 
+victim(238) performs get_heat_burn to obtain thermal_burn using large_fire(237) for heat, 
+large_fire(237) performs spread to obtain smoke using decorations(236) for sustaining_fuel, 
+large_fire(237) performs ignite to obtain smoke using candle(235) for ignition, towel(234) for fuel, 
+victim(238) performs burn_throat_smoke to obtain grogginess using large_fire(237) for smoke, 
+
+ Init Objects: 
+towel(234)
+candle(235)
+decorations(236)
+tap(239)
+land_line(240)
+
+ Dynamic Objects: 
+large_fire(237)
+victim(238)
+
+ Services: 
+decorations offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+candle offers ignition at level: 1
+tap offers water at level: 1
+towel offers fuel at level: 1
+towel offers bandage at level: 1
+victim offers thermal_burn at level: 1
+large_fire offers heat at level: 1
+large_fire offers smoke at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Home at level: 1
+Planning: 
+turn_off_power using hair_dryer(243) for current, 
+determine_grogginess using victim(244) for grogginess, 
+cool_burn using victim(244) for burn, tap(242) for water, 
+bandage_wound using victim(244) for injury, first_aid_kit(245) for bandage, 
+
+ Story: 
+victim(244) performs drop_in_water to obtain current using tap(242) for water, 
+victim(244) performs electrocute to obtain electric_burn using hair_dryer(243) for current, 
+victim(244) performs fall_down to obtain grogginess using step(241) for obstacle, victim(244) for danger, 
+
+ Init Objects: 
+step(241)
+tap(242)
+hair_dryer(243)
+first_aid_kit(245)
+
+ Dynamic Objects: 
+victim(244)
+
+ Services: 
+step offers obstacle at level: 1
+tap offers water at level: 1
+hair_dryer offers current at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Home at level: 1
+Planning: 
+determine_grogginess using victim(248) for grogginess, 
+cool_burn using victim(248) for burn, tap(249) for water, 
+bandage_wound using victim(248) for injury, first_aid_kit(250) for bandage, 
+
+ Story: 
+victim(248) performs get_burn_chem to obtain chem_burn using ammonia(247) for chemical, 
+victim(248) performs fall_down to obtain grogginess using toys(246) for obstacle, victim(248) for danger, 
+
+ Init Objects: 
+toys(246)
+ammonia(247)
+tap(249)
+first_aid_kit(250)
+
+ Dynamic Objects: 
+victim(248)
+
+ Services: 
+toys offers obstacle at level: 1
+ammonia offers burning_chemical at level: 1
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers chem_burn at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: treat_burn in the Home at level: 1
+Planning: 
+turn_off_power using hair_dryer(260) for current, 
+talk_to_person using victim(251) for panic, 
+cool_burn using victim(251) for burn, tap(259) for water, 
+bandage_wound using victim(251) for injury, first_aid_kit(261) for bandage, 
+
+ Story: 
+victim(251) performs panic to obtain panic using victim(251) for danger, 
+victim(251) performs drop_in_water to obtain current using tap(259) for water, 
+victim(251) performs electrocute to obtain electric_burn using hair_dryer(260) for current, 
+
+ Init Objects: 
+tap(259)
+hair_dryer(260)
+first_aid_kit(261)
+
+ Dynamic Objects: 
+victim(251)
+
+ Services: 
+tap offers water at level: 1
+hair_dryer offers current at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers panic at level: 1
+victim offers consciousness at level: 0
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Home at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(268) for communication, 
+determine_grogginess using victim(265) for grogginess, 
+cool_burn using victim(265) for burn, tap(266) for water, 
+remove_clothing using victim(265) for clothing_near_wound, 
+bandage_wound using victim(265) for injury, first_aid_kit(267) for bandage, 
+
+ Story: 
+victim(265) performs get_heat_burn to obtain thermal_burn using pan(263) for heat, 
+large_fire(264) performs spread to obtain smoke using decorations(262) for sustaining_fuel, 
+large_fire(264) performs ignite to obtain smoke using pan(263) for ignition, decorations(262) for fuel, 
+victim(265) performs burn_throat_smoke to obtain grogginess using large_fire(264) for smoke, 
+
+ Init Objects: 
+decorations(262)
+pan(263)
+tap(266)
+first_aid_kit(267)
+land_line(268)
+
+ Dynamic Objects: 
+large_fire(264)
+victim(265)
+
+ Services: 
+decorations offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+pan offers ignition at level: 2
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 2
+victim offers thermal_burn at level: 2
+pan offers heat at level: 1
+large_fire offers smoke at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Home at level: 2
+Planning: 
+turn_off_power using hair_dryer(270) for current, 
+determine_grogginess using victim(271) for grogginess, 
+cool_burn using victim(271) for burn, tap(269) for water, 
+remove_clothing using victim(271) for clothing_near_wound, 
+bandage_wound using victim(271) for injury, gauze_bandage(272) for bandage, 
+
+ Story: 
+victim(271) performs electrocute to obtain electric_burn using hair_dryer(270) for current, 
+victim(271) performs drop_in_water to obtain current using tap(269) for water, 
+victim(271) performs electrocute to obtain grogginess using hair_dryer(270) for current, 
+
+ Init Objects: 
+tap(269)
+hair_dryer(270)
+gauze_bandage(272)
+
+ Dynamic Objects: 
+victim(271)
+
+ Services: 
+tap offers water at level: 1
+hair_dryer offers current at level: 2
+gauze_bandage offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Home at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(280) for communication, 
+determine_grogginess using victim(277) for grogginess, 
+cool_burn using victim(277) for burn, tap(278) for water, 
+remove_clothing using victim(277) for clothing_near_wound, 
+bandage_wound using victim(277) for injury, first_aid_kit(279) for bandage, 
+
+ Story: 
+victim(277) performs get_heat_burn to obtain thermal_burn using pan(274) for heat, 
+large_fire(276) performs spread to obtain smoke using decorations(275) for sustaining_fuel, 
+large_fire(276) performs ignite to obtain smoke using pan(274) for ignition, clothing(273) for fuel, 
+victim(277) performs burn_throat_smoke to obtain grogginess using large_fire(276) for smoke, 
+
+ Init Objects: 
+clothing(273)
+pan(274)
+decorations(275)
+tap(278)
+first_aid_kit(279)
+land_line(280)
+
+ Dynamic Objects: 
+large_fire(276)
+victim(277)
+
+ Services: 
+decorations offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+pan offers ignition at level: 2
+tap offers water at level: 1
+clothing offers fuel at level: 1
+first_aid_kit offers bandage at level: 2
+victim offers thermal_burn at level: 2
+pan offers heat at level: 1
+large_fire offers smoke at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Home at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(286) for communication, 
+determine_unconsciousness using victim(285) for unconsciousness, 
+chin_lift3 using victim(285) for troubled_breathing, victim(285) for unconsciousness, 
+call_for_professional_aid using mobile_phone(286) for communication, 
+apply_recovery_position using victim(285) for unconsciousness, 
+remove_clothing using victim(285) for clothing_near_wound, 
+bandage_wound using victim(285) for injury, first_aid_kit(287) for bandage, 
+
+ Story: 
+victim(285) performs get_heat_burn to obtain thermal_burn using pan(282) for heat, 
+victim(285) performs burn_throat_smoke to obtain troubled_breathing using large_fire(284) for smoke, 
+large_fire(284) performs spread to obtain smoke using curtains(283) for sustaining_fuel, 
+large_fire(284) performs ignite to obtain smoke using pan(282) for ignition, napkin(281) for fuel, 
+victim(285) performs burn_throat_smoke to obtain unconsciousness using large_fire(284) for smoke, 
+
+ Init Objects: 
+napkin(281)
+pan(282)
+curtains(283)
+mobile_phone(286)
+first_aid_kit(287)
+
+ Dynamic Objects: 
+large_fire(284)
+victim(285)
+
+ Services: 
+victim offers troubled_breathing at level: 2
+curtains offers sustaining_fuel at level: 1
+mobile_phone offers communication at level: 1
+pan offers ignition at level: 2
+napkin offers fuel at level: 1
+first_aid_kit offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers unconsciousness at level: 2
+pan offers heat at level: 1
+large_fire offers smoke at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Home at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(292) for communication, 
+determine_unconsciousness using victim(291) for unconsciousness, 
+chin_lift2 using victim(291) for unconsciousness, victim(291) for no_breathing, 
+call_for_professional_aid using mobile_phone(292) for communication, 
+perform_CPR using victim(291) for unconsciousness, victim(291) for no_breathing, 
+remove_clothing using victim(291) for clothing_near_wound, 
+bandage_wound using victim(291) for injury, gauze_bandage(293) for bandage, 
+
+ Story: 
+victim(291) performs get_heat_burn to obtain thermal_burn using pan(289) for heat, 
+victim(291) performs burn_throat_smoke to obtain no_breathing using large_fire(290) for smoke, 
+large_fire(290) performs spread to obtain smoke using curtains(288) for sustaining_fuel, 
+large_fire(290) performs ignite to obtain smoke using pan(289) for ignition, curtains(288) for fuel, 
+victim(291) performs burn_throat_smoke to obtain unconsciousness using large_fire(290) for smoke, 
+
+ Init Objects: 
+curtains(288)
+pan(289)
+mobile_phone(292)
+gauze_bandage(293)
+
+ Dynamic Objects: 
+large_fire(290)
+victim(291)
+
+ Services: 
+curtains offers sustaining_fuel at level: 1
+mobile_phone offers communication at level: 1
+pan offers ignition at level: 2
+gauze_bandage offers bandage at level: 2
+victim offers thermal_burn at level: 2
+victim offers unconsciousness at level: 2
+pan offers heat at level: 1
+large_fire offers smoke at level: 2
+victim offers no_breathing at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Restaurant at level: 2
+Planning: 
+turn_off_power using broken_electric_equipment(294) for current, 
+determine_grogginess using victim(295) for grogginess, 
+cool_burn using victim(295) for burn, tap(296) for water, 
+remove_clothing using victim(295) for clothing_near_wound, 
+bandage_wound using victim(295) for injury, towel(297) for bandage, 
+
+ Story: 
+victim(295) performs electrocute to obtain electric_burn using broken_electric_equipment(294) for current, 
+victim(295) performs electrocute to obtain grogginess using broken_electric_equipment(294) for current, 
+
+ Init Objects: 
+broken_electric_equipment(294)
+tap(296)
+towel(297)
+
+ Dynamic Objects: 
+victim(295)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 2
+towel offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Restaurant at level: 2
+Planning: 
+turn_off_power using toaster(299) for current, 
+determine_grogginess using victim(300) for grogginess, 
+cool_burn using victim(300) for burn, tap(301) for water, 
+remove_clothing using victim(300) for clothing_near_wound, 
+bandage_wound using victim(300) for injury, towel(302) for bandage, 
+
+ Story: 
+victim(300) performs electrocute to obtain electric_burn using toaster(299) for current, 
+victim(300) performs pry to obtain current using knife(298) for metal_prier, 
+victim(300) performs electrocute to obtain grogginess using toaster(299) for current, 
+
+ Init Objects: 
+knife(298)
+toaster(299)
+tap(301)
+towel(302)
+
+ Dynamic Objects: 
+victim(300)
+
+ Services: 
+knife offers metal_prier at level: 1
+tap offers water at level: 1
+toaster offers current at level: 2
+towel offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Restaurant at level: 2
+Planning: 
+turn_off_power using broken_electric_equipment(303) for current, 
+determine_unconsciousness using victim(304) for unconsciousness, 
+chin_lift3 using victim(304) for troubled_breathing, victim(304) for unconsciousness, 
+call_for_professional_aid using mobile_phone(305) for communication, 
+apply_recovery_position using victim(304) for unconsciousness, 
+remove_clothing using victim(304) for clothing_near_wound, 
+bandage_wound using victim(304) for injury, first_aid_kit(306) for bandage, 
+
+ Story: 
+victim(304) performs electrocute to obtain electric_burn using broken_electric_equipment(303) for current, 
+victim(304) performs burn_throat_elec to obtain troubled_breathing using broken_electric_equipment(303) for current, 
+victim(304) performs electrocute to obtain unconsciousness using broken_electric_equipment(303) for current, 
+
+ Init Objects: 
+broken_electric_equipment(303)
+mobile_phone(305)
+first_aid_kit(306)
+
+ Dynamic Objects: 
+victim(304)
+
+ Services: 
+victim offers troubled_breathing at level: 2
+mobile_phone offers communication at level: 1
+broken_electric_equipment offers current at level: 2
+first_aid_kit offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers unconsciousness at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Restaurant at level: 2
+Planning: 
+turn_off_power using broken_electric_equipment(307) for current, 
+determine_grogginess using victim(308) for grogginess, 
+cool_burn using victim(308) for burn, tap(309) for water, 
+remove_clothing using victim(308) for clothing_near_wound, 
+bandage_wound using victim(308) for injury, first_aid_kit(310) for bandage, 
+
+ Story: 
+victim(308) performs electrocute to obtain electric_burn using broken_electric_equipment(307) for current, 
+victim(308) performs electrocute to obtain grogginess using broken_electric_equipment(307) for current, 
+
+ Init Objects: 
+broken_electric_equipment(307)
+tap(309)
+first_aid_kit(310)
+
+ Dynamic Objects: 
+victim(308)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 2
+first_aid_kit offers bandage at level: 2
+victim offers electric_burn at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Restaurant at level: 2
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(317) for communication, 
+determine_grogginess using victim(314) for grogginess, 
+cool_burn using victim(314) for burn, tap(315) for water, 
+remove_clothing using victim(314) for clothing_near_wound, 
+bandage_wound using victim(314) for injury, towel(316) for bandage, 
+
+ Story: 
+victim(314) performs get_heat_burn to obtain thermal_burn using pan(312) for heat, 
+large_fire(313) performs spread to obtain smoke using extractor_hood(311) for sustaining_fuel, 
+large_fire(313) performs ignite to obtain smoke using pan(312) for ignition, extractor_hood(311) for fuel, 
+victim(314) performs burn_throat_smoke to obtain grogginess using large_fire(313) for smoke, 
+
+ Init Objects: 
+extractor_hood(311)
+pan(312)
+tap(315)
+towel(316)
+mobile_phone(317)
+
+ Dynamic Objects: 
+large_fire(313)
+victim(314)
+
+ Services: 
+extractor_hood offers sustaining_fuel at level: 2
+mobile_phone offers communication at level: 1
+pan offers ignition at level: 2
+tap offers water at level: 1
+towel offers bandage at level: 2
+victim offers thermal_burn at level: 2
+pan offers heat at level: 1
+large_fire offers smoke at level: 2
+victim offers grogginess at level: 2
+victim offers clothing_near_wound at level: 2
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Laboratorium at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(318) for current, 
+determine_unconsciousness using victim(319) for unconsciousness, 
+chin_lift1 using victim(319) for unconsciousness, victim(319) for breathing, 
+call_for_professional_aid using mobile_phone(320) for communication, 
+apply_recovery_position using victim(319) for unconsciousness, 
+bandage_wound using victim(319) for injury, gauze_bandage(321) for bandage, 
+
+ Story: 
+victim(319) performs electrocute to obtain electric_burn using broken_electric_equipment(318) for current, 
+victim(319) performs electrocute to obtain unconsciousness using broken_electric_equipment(318) for current, 
+
+ Init Objects: 
+broken_electric_equipment(318)
+mobile_phone(320)
+gauze_bandage(321)
+
+ Dynamic Objects: 
+victim(319)
+
+ Services: 
+mobile_phone offers communication at level: 1
+broken_electric_equipment offers current at level: 1
+gauze_bandage offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers unconsciousness at level: 1
+victim offers breathing at level: 0
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Laboratorium at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using land_line(327) for communication, 
+determine_unconsciousness using victim(326) for unconsciousness, 
+chin_lift1 using victim(326) for unconsciousness, victim(326) for breathing, 
+call_for_professional_aid using land_line(327) for communication, 
+apply_recovery_position using victim(326) for unconsciousness, 
+bandage_wound using victim(326) for injury, gauze_bandage(328) for bandage, 
+
+ Story: 
+large_fire(325) performs spread to obtain heat using organic_solvent(323) for sustaining_fuel, 
+large_fire(325) performs ignite to obtain heat using burner(324) for ignition, organic_solvent(323) for fuel, 
+victim(326) performs get_heat_burn to obtain thermal_burn using large_fire(325) for heat, 
+large_fire(325) performs spread to obtain danger using organic_solvent(323) for sustaining_fuel, 
+large_fire(325) performs ignite to obtain danger using burner(324) for ignition, organic_solvent(323) for fuel, 
+victim(326) performs fall_down to obtain unconsciousness using step(322) for obstacle, large_fire(325) for danger, 
+
+ Init Objects: 
+step(322)
+organic_solvent(323)
+burner(324)
+land_line(327)
+gauze_bandage(328)
+
+ Dynamic Objects: 
+large_fire(325)
+victim(326)
+
+ Services: 
+step offers obstacle at level: 1
+organic_solvent offers sustaining_fuel at level: 1
+land_line offers communication at level: 1
+burner offers ignition at level: 1
+gauze_bandage offers bandage at level: 1
+victim offers thermal_burn at level: 1
+victim offers unconsciousness at level: 1
+large_fire offers heat at level: 1
+victim offers breathing at level: 0
+large_fire offers danger at level: 1
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Laboratorium at level: 1
+Planning: 
+extinguish_fire using fire_blanket(336) for extinguisher, 
+determine_grogginess using victim(333) for grogginess, 
+cool_burn using victim(333) for burn, tap(334) for water, 
+bandage_wound using victim(333) for injury, gauze_bandage(335) for bandage, 
+
+ Story: 
+small_fire(332) performs ignite to obtain heat using burner(331) for ignition, organice_garbage_bin(330) for fuel, 
+victim(333) performs get_heat_burn to obtain thermal_burn using small_fire(332) for heat, 
+small_fire(332) performs ignite to obtain danger using burner(331) for ignition, organice_garbage_bin(330) for fuel, 
+victim(333) performs fall_down to obtain grogginess using step(329) for obstacle, small_fire(332) for danger, 
+
+ Init Objects: 
+step(329)
+organice_garbage_bin(330)
+burner(331)
+tap(334)
+gauze_bandage(335)
+fire_blanket(336)
+
+ Dynamic Objects: 
+small_fire(332)
+victim(333)
+
+ Services: 
+step offers obstacle at level: 1
+organice_garbage_bin offers sustaining_fuel at level: 1
+burner offers ignition at level: 1
+tap offers water at level: 1
+gauze_bandage offers bandage at level: 1
+fire_blanket offers extinguisher at level: 1
+victim offers thermal_burn at level: 1
+small_fire offers heat at level: 1
+victim offers grogginess at level: 1
+small_fire offers danger at level: 1
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Laboratorium at level: 1
+Planning: 
+determine_grogginess using victim(339) for grogginess, 
+cool_burn using victim(339) for burn, tap(340) for water, 
+bandage_wound using victim(339) for injury, first_aid_kit(341) for bandage, 
+
+ Story: 
+victim(339) performs get_burn_chem to obtain chem_burn using ammonia(338) for chemical, 
+victim(339) performs fall_down to obtain grogginess using step(337) for obstacle, victim(339) for danger, 
+
+ Init Objects: 
+step(337)
+ammonia(338)
+tap(340)
+first_aid_kit(341)
+
+ Dynamic Objects: 
+victim(339)
+
+ Services: 
+step offers obstacle at level: 1
+ammonia offers burning_chemical at level: 1
+tap offers water at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers chem_burn at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Laboratorium at level: 1
+Planning: 
+turn_off_power using broken_electric_equipment(342) for current, 
+determine_grogginess using victim(343) for grogginess, 
+cool_burn using victim(343) for burn, tap(344) for water, 
+bandage_wound using victim(343) for injury, first_aid_kit(345) for bandage, 
+
+ Story: 
+victim(343) performs electrocute to obtain electric_burn using broken_electric_equipment(342) for current, 
+victim(343) performs electrocute to obtain grogginess using broken_electric_equipment(342) for current, 
+
+ Init Objects: 
+broken_electric_equipment(342)
+tap(344)
+first_aid_kit(345)
+
+ Dynamic Objects: 
+victim(343)
+
+ Services: 
+tap offers water at level: 1
+broken_electric_equipment offers current at level: 1
+first_aid_kit offers bandage at level: 1
+victim offers electric_burn at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Park at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using mobile_phone(350) for communication, 
+determine_unconsciousness using victim(349) for unconsciousness, 
+chin_lift1 using victim(349) for unconsciousness, victim(349) for breathing, 
+call_for_professional_aid using mobile_phone(350) for communication, 
+apply_recovery_position using victim(349) for unconsciousness, 
+bandage_wound using victim(349) for injury, tshirt(351) for bandage, 
+
+ Story: 
+large_fire(348) performs spread to obtain heat using dry_vegetation(346) for sustaining_fuel, 
+large_fire(348) performs ignite to obtain heat using bbq(347) for ignition, dry_vegetation(346) for fuel, 
+victim(349) performs get_heat_burn to obtain thermal_burn using large_fire(348) for heat, 
+large_fire(348) performs spread to obtain smoke using dry_vegetation(346) for sustaining_fuel, 
+large_fire(348) performs ignite to obtain smoke using bbq(347) for ignition, dry_vegetation(346) for fuel, 
+victim(349) performs burn_throat_smoke to obtain unconsciousness using large_fire(348) for smoke, 
+
+ Init Objects: 
+dry_vegetation(346)
+bbq(347)
+mobile_phone(350)
+tshirt(351)
+
+ Dynamic Objects: 
+large_fire(348)
+victim(349)
+
+ Services: 
+dry_vegetation offers sustaining_fuel at level: 1
+mobile_phone offers communication at level: 1
+bbq offers ignition at level: 1
+tshirt offers bandage at level: 2
+victim offers thermal_burn at level: 1
+victim offers unconsciousness at level: 1
+large_fire offers heat at level: 1
+large_fire offers smoke at level: 1
+victim offers breathing at level: 0
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Park at level: 1
+Planning: 
+determine_unconsciousness using victim(353) for unconsciousness, 
+chin_lift3 using victim(353) for troubled_breathing, victim(353) for unconsciousness, 
+call_for_professional_aid using bystander(355) for communication, 
+apply_recovery_position using victim(353) for unconsciousness, 
+bandage_wound using victim(353) for injury, tshirt(356) for bandage, 
+
+ Story: 
+victim(353) performs electrocute to obtain electric_burn using high_voltage_cable(354) for current, 
+victim(353) performs burn_throat_elec to obtain troubled_breathing using high_voltage_cable(354) for current, 
+victim(353) performs climb to obtain connector
+victim(353) performs connect to obtain current using tree(352) for connector, 
+victim(353) performs electrocute to obtain unconsciousness using high_voltage_cable(354) for current, 
+
+ Init Objects: 
+tree(352)
+high_voltage_cable(354)
+tshirt(356)
+
+ Dynamic Objects: 
+victim(353)
+bystander(355)
+
+ Services: 
+tree offers connector at level: 1
+victim offers troubled_breathing at level: 1
+bystander offers communication at level: 1
+high_voltage_cable offers current at level: 1
+tshirt offers bandage at level: 2
+victim offers electric_burn at level: 1
+victim offers unconsciousness at level: 1
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Park at level: 1
+Planning: 
+remove_victim_from_danger
+call_fire_department using bystander(363) for communication, 
+determine_grogginess using victim(360) for grogginess, 
+cool_burn using victim(360) for burn, fountain(361) for water, 
+bandage_wound using victim(360) for injury, tshirt(362) for bandage, 
+
+ Story: 
+large_fire(359) performs spread to obtain heat using methylated_spirits(357) for sustaining_fuel, 
+large_fire(359) performs ignite to obtain heat using bbq(358) for ignition, methylated_spirits(357) for fuel, 
+victim(360) performs get_heat_burn to obtain thermal_burn using large_fire(359) for heat, 
+large_fire(359) performs spread to obtain smoke using methylated_spirits(357) for sustaining_fuel, 
+large_fire(359) performs ignite to obtain smoke using bbq(358) for ignition, methylated_spirits(357) for fuel, 
+victim(360) performs burn_throat_smoke to obtain grogginess using large_fire(359) for smoke, 
+
+ Init Objects: 
+methylated_spirits(357)
+bbq(358)
+fountain(361)
+tshirt(362)
+
+ Dynamic Objects: 
+large_fire(359)
+victim(360)
+bystander(363)
+
+ Services: 
+methylated_spirits offers sustaining_fuel at level: 1
+bystander offers communication at level: 1
+bbq offers ignition at level: 1
+fountain offers water at level: 1
+tshirt offers bandage at level: 2
+victim offers thermal_burn at level: 1
+large_fire offers heat at level: 1
+large_fire offers smoke at level: 1
+victim offers grogginess at level: 1
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Park at level: 1
+Planning: 
+determine_unconsciousness using victim(365) for unconsciousness, 
+chin_lift3 using victim(365) for troubled_breathing, victim(365) for unconsciousness, 
+call_for_professional_aid using bystander(367) for communication, 
+apply_recovery_position using victim(365) for unconsciousness, 
+bandage_wound using victim(365) for injury, tshirt(368) for bandage, 
+
+ Story: 
+victim(365) performs electrocute to obtain electric_burn using high_voltage_cable(366) for current, 
+victim(365) performs burn_throat_elec to obtain troubled_breathing using high_voltage_cable(366) for current, 
+victim(365) performs climb to obtain connector
+victim(365) performs connect to obtain current using tree(364) for connector, 
+victim(365) performs electrocute to obtain unconsciousness using high_voltage_cable(366) for current, 
+
+ Init Objects: 
+tree(364)
+high_voltage_cable(366)
+tshirt(368)
+
+ Dynamic Objects: 
+victim(365)
+bystander(367)
+
+ Services: 
+tree offers connector at level: 1
+victim offers troubled_breathing at level: 1
+bystander offers communication at level: 1
+high_voltage_cable offers current at level: 1
+tshirt offers bandage at level: 2
+victim offers electric_burn at level: 1
+victim offers unconsciousness at level: 1
+
+ -------------------------------------------------- 
+Task to train: ensure_ABC in the Park at level: 1
+Planning: 
+determine_unconsciousness using victim(371) for unconsciousness, 
+chin_lift1 using victim(371) for unconsciousness, victim(371) for breathing, 
+call_for_professional_aid using mobile_phone(372) for communication, 
+apply_recovery_position using victim(371) for unconsciousness, 
+bandage_wound using victim(371) for injury, tshirt(373) for bandage, 
+
+ Story: 
+victim(371) performs get_burn_chem to obtain chem_burn using bleach(370) for chemical, 
+victim(371) performs fall_down to obtain unconsciousness using rocks(369) for obstacle, victim(371) for danger, 
+
+ Init Objects: 
+rocks(369)
+bleach(370)
+mobile_phone(372)
+tshirt(373)
+
+ Dynamic Objects: 
+victim(371)
+
+ Services: 
+rocks offers obstacle at level: 1
+bleach offers intoxicating_chemical at level: 1
+mobile_phone offers communication at level: 1
+tshirt offers bandage at level: 2
+victim offers chem_burn at level: 1
+victim offers unconsciousness at level: 1
+victim offers breathing at level: 0
+
+ -------------------------------------------------- 
+2
+3
+1
+1
+3
+3
+2
+0
+4
+3
+0
+2
